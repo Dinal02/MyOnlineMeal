@@ -1,0 +1,243 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 10px 28px;
+}
+
+#logo img {
+    height: 65px;
+    width: 82px;
+    margin: 3px 6px;
+    border-radius: 40px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/spaghetti.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 570px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Services Section */
+
+#services {
+    margin: 23px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    background-color: rgb(230, 228, 228);
+    border-radius: 23px;
+    margin-bottom: 23px;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+    border-radius: 23px;
+}
+
+/* #services .box p {
+
+} */
+
+/* Clients Section */
+#client-section {
+    height: 400px;
+    /* position: relative; */
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../img/salad.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 56%;
+    z-index: -1;
+    opacity: 0.5;
+    /* margin-bottom: 34px; */
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+#clients img {
+    height: 124px;
+}
+
+/* Contact Us Section */
+#contact {
+    margin-top: 34px;
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url('../img/contact-us.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.2rem;
+}
+
+#contact-box input,
+#contact-box textarea,
+#contact-box button {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box button {
+    margin-top: 23px;
+    background-color: black;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
